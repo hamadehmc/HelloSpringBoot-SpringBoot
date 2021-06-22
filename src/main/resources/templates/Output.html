@@ -8,11 +8,15 @@
 <body>
 <h1>Output</h1>
 <p>
-  First Name: <span th:text="${param.firstName}">Bart</span>
+  First Name: <span th:text="${firstName}">Bart</span>
 </p>
 
 <p>
-  Last Name: <span th:text="${param.lastName}">Simp</span>
+  Last Name: <span th:text="${lastName}">Simp</span>
+</p>
+
+<p>
+    <a href="Input.html" th:href="@{Input}">Go Back</a>
 </p>
 </body>
 </html>
