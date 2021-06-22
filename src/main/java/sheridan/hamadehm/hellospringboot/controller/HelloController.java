@@ -19,4 +19,12 @@ public class HelloController {
         model.addAttribute( "name",name);
         return "Hello";
     }
+    @GetMapping("/Input")
+    public String input(){
+        return "Input";
+    }
+    @GetMapping("/Output")
+    public String output(){
+        return "Output";
+    }
 }
