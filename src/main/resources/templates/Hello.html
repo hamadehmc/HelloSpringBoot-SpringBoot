@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" xmlns:th="http://www.thymleafe.org">
+    <link rel="stylesheet" href="../static/css/main.css" th:href="@{css/main.css}">
+
     <title>Hello</title>
 </head>
 <body>
-<h1>Hello Mohamad</h1>
+<h1>Hello <span th:text="${param.userName}">Mohamad</span>@!</h1>
 </body>
 </html>
